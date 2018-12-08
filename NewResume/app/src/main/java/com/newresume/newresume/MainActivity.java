@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.newresume.newresume.model.MyBean;
+
 public class MainActivity extends AppCompatActivity {
     TextView nameTextView;
     ImageView photoImageView;
@@ -30,16 +32,22 @@ public class MainActivity extends AppCompatActivity {
         workingHistoryButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goTOWorkHistory = new Intent(getApplicationContext(), WorkHistoryActivity.class);
-                startActivity(goTOWorkHistory);
+                MyBean bean = new MyBean();
+                bean.setPageIndex(1024);
+                Intent passBean = new Intent(MainActivity.this, WorkHistoryActivity.class);
+                passBean.putExtra("bean", bean);
+                startActivity(passBean);
+                //Intent goTOWorkHistory = new Intent(getApplicationContext(), WorkHistoryActivity.class);
+                //startActivity(goTOWorkHistory);
             }
         });
         callButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Uri myCellNumber = Uri.parse("tel:+8613812345678");
-                Intent callMyNumber = new Intent(Intent.ACTION_DIAL, myCellNumber);
-                startActivity(callMyNumber);
+                //Intent callMyNumber = new Intent(Intent.ACTION_DIAL, myCellNumber);
+                //startActivity(callMyNumber);
+
             }
         });
         emailButton.setOnClickListener(new View.OnClickListener() {
