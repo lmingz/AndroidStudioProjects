@@ -11,31 +11,31 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="93dp"
-        android:layout_marginBottom="37dp"
-        android:contentDescription="user avatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_gravity="center_horizontal"
-        app:srcCompat="@mipmap/bunny_forground"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="28dp"
+        android:contentDescription="user avatar"
+        app:srcCompat="@mipmap/bunny_round"
         tools:layout_gravity="center_horizontal" />
 
     <EditText
         android:id="@+id/userNameEditText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="38dp"
         android:autofillHints="@string/StringPleaseEnterUserName"
-        android:ems="10"
         android:background="#ffffff"
+        android:ems="10"
         android:hint="@string/StringPleaseEnterUserName"
         android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
         android:background="#ffffff
 "
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/StringPleaseEnterPassWord"
         android:inputType="textPassword" />
@@ -44,10 +44,10 @@
         android:id="@+id/logInButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:background="#fd8625"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="17dp"
         android:text="@string/StringLogIn" />
 
     <TextView
@@ -56,8 +56,8 @@
         android:layout_height="wrap_content"
         android:text="@string/StringNoPassWordLogin"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        android:textColor="#b6c0d4"
-        android:layout_marginTop="34dp"
+        android:textColor="#8398b0"
+        android:layout_marginTop="17dp"
         android:gravity="center_horizontal"
         android:layout_gravity="center_horizontal"/>
 </LinearLayout>
