@@ -6,11 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     EditText userNameEditText;
     EditText passWordEditText;
     Button loginButton;
+    TextView noPassWordLoginTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
         userNameEditText = (EditText) findViewById(R.id.userNameEditText);
         passWordEditText = (EditText) findViewById(R.id.passWordEditText);
         loginButton = (Button) findViewById(R.id.logInButton);
+        noPassWordLoginTextView = (TextView) findViewById(R.id.noPassWordLoginTextView);
+
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -28,5 +32,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(passInfo);
             }
         });
+
+        noPassWordLoginTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToNoPasswordLoginActivity = new Intent(MainActivity.this, NoPasswordLoginActivity.class);
+                startActivity(goToNoPasswordLoginActivity);
+            }
+        });
+
     }
 }
