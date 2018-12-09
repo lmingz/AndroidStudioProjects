@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#f8f8f8"
     tools:context=".MainActivity">
 
 
@@ -15,6 +16,7 @@
         android:layout_marginTop="93dp"
         android:layout_marginBottom="37dp"
         android:contentDescription="user avatar"
+        android:layout_gravity="center_horizontal"
         app:srcCompat="@mipmap/bunny_forground"
         tools:layout_gravity="center_horizontal" />
 
@@ -24,11 +26,14 @@
         android:layout_height="wrap_content"
         android:autofillHints="@string/StringPleaseEnterUserName"
         android:ems="10"
+        android:background="#ffffff"
         android:hint="@string/StringPleaseEnterUserName"
         android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/editText2"
+        android:background="#ffffff
+"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -42,13 +47,17 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:background="#fd8625"
+        android:layout_marginTop="34dp"
         android:text="@string/StringLogIn" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="115dp"
         android:layout_height="wrap_content"
-        android:text="@string/StringLogIn"
-        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
-        tools:layout_gravity="center_horizontal" />
+        android:text="@string/StringNoPassWordLogin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#b6c0d4"
+        android:layout_marginTop="34dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"/>
 </LinearLayout>

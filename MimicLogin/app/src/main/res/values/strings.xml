@@ -3,4 +3,5 @@
     <string name="StringLogIn">登陆</string>
     <string name="StringPleaseEnterPassWord">请输入密码</string>
     <string name="StringPleaseEnterUserName">邮箱/手机号</string>
+    <string name="StringNoPassWordLogin">无密码登陆</string>
 </resources>
