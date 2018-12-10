@@ -20,25 +20,64 @@
         app:srcCompat="@mipmap/bunny_round"
         tools:layout_gravity="center_horizontal" />
 
-    <EditText
-        android:id="@+id/userNameEditText"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="38dp"
-        android:autofillHints="@string/StringPleaseEnterUserName"
-        android:background="#ffffff"
-        android:ems="10"
-        android:hint="@string/StringPleaseEnterUserName"
-        android:inputType="textPersonName" />
+        android:orientation="horizontal"
+        android:background="#ffffff">
 
-    <EditText
-        android:id="@+id/passWordEditText"
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            app:srcCompat="@mipmap/user_name_foreground" />
+
+        <EditText
+            android:id="@+id/userNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:autofillHints="@string/StringPleaseEnterUserName"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="@string/StringPleaseEnterUserName"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="38dp"
-        android:background="#ffffff
-"
-        android:ems="10"
-        android:hint="@string/StringPleaseEnterPassWord"
-        android:inputType="textPassword" />
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_weight="0"
+            app:srcCompat="@mipmap/password_foreground" />
+
+        <EditText
+            android:id="@+id/passWordEditText"
+            android:layout_width="286dp"
+            android:layout_height="38dp"
+            android:background="#ffffff
+    "
+            android:ems="10"
+            android:hint="@string/StringPleaseEnterPassWord"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/ForgetPasswordTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity=""
+            android:layout_weight="0"
+            android:gravity="right"
+            android:text="@string/StringForgetPassword"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#8398b0"
+            tools:gravity="right" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/logInButton"
@@ -85,11 +124,11 @@
             android:id="@+id/divideTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="|"
             android:layout_gravity="bottom"
             android:layout_marginBottom="24dp"
             android:gravity="bottom"
-            android:textColor="#8398b0"/>
+            android:text="  |  "
+            android:textColor="#8398b0" />
 
         <TextView
             android:id="@+id/LoginWithQQTextView"
