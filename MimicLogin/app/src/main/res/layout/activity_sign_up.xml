@@ -4,16 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NoPasswordLoginActivity"
+    tools:context=".SignUpActivity"
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/welcomeTONoPasswordLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="这里是无密码登录页面"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="这里是注册页面"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
 
 </LinearLayout>

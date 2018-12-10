@@ -17,7 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".ShowLoginInfoActivity" />
-        <activity android:name=".NoPasswordLoginActivity"></activity>
+        <activity android:name=".NoPasswordLoginActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".LoginWithQQTextView" />
+        <activity android:name=".LoginWithQQActivity"></activity>
     </application>
 
 </manifest>

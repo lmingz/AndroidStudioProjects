@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
     EditText passWordEditText;
     Button loginButton;
     TextView noPassWordLoginTextView;
+    TextView signUpTextView;
+    TextView signInWithQQTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         passWordEditText = (EditText) findViewById(R.id.passWordEditText);
         loginButton = (Button) findViewById(R.id.logInButton);
         noPassWordLoginTextView = (TextView) findViewById(R.id.noPassWordLoginTextView);
+        signUpTextView = (TextView) findViewById(R.id.SignUpTextView);
+        signInWithQQTextView = (TextView) findViewById(R.id.LoginWithQQTextView);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +42,22 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent goToNoPasswordLoginActivity = new Intent(MainActivity.this, NoPasswordLoginActivity.class);
                 startActivity(goToNoPasswordLoginActivity);
+            }
+        });
+
+        signUpTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToSignUpActivity = new Intent(MainActivity.this, SignUpActivity.class);
+                startActivity(goToSignUpActivity);
+            }
+        });
+
+        signInWithQQTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToLoginWithQQActivity = new Intent(MainActivity.this, LoginWithQQActivity.class);
+                startActivity(goToLoginWithQQActivity);
             }
         });
 
