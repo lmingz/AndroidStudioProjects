@@ -1,3 +1,2 @@
 # MyAndroidDevelopmentLearning
-AndroidStudioProjects
-安卓开发学习repo，谢谢杨老师。
+新手上路学习安卓开发。谢谢杨老师指导。
