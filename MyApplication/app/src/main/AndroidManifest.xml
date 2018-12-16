@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sampleproject.mimiclogin">
+    package="com.sampleproject.myapplication">
 
     <application
         android:allowBackup="true"
@@ -16,11 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ShowLoginInfoActivity" />
-        <activity android:name=".NoPasswordLoginActivity" />
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".LoginWithQQTextView" />
-        <activity android:name=".LoginWithQQActivity"></activity>
+        <activity android:name=".FirstActivity"/>s
     </application>
 
 </manifest>
